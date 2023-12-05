@@ -1,0 +1,12 @@
+<!-- <p>confirm-dialog works!</p> -->
+<h1 mat-dialog-title> Está seguro?</h1>
+
+<div mat-dialog-content>
+    <p>Este proceso no es reversible, esta a punto de eliminar a {{ data.superhero }}</p>
+</div>
+
+<div mat-dialog-actions>
+    <button mat-button color="primary" (click)="onNoClick()">No Gracias</button>
+    <span class="spacer"></span>
+    <button mat-button color="warn" (click)="onConfirm()">Si, por favor</button>
+</div>
